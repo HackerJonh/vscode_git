@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METODOS DE WINDOWS IMPORTANTES</title>
+</head>
+
+<body>
+    <script>
+        var miVentana; //Crear fuera de las funciones para acceder a ella
+
+        function crearVentana() {
+            //Crea una ventana que llama a Youtube
+            //miVentana=window.open("https://www.youtube.com");
+
+            //Crea una ventana con un Ancho y Alto
+            miVentana = window.open("https://www.google.com", "", "width=600,height=400");
+            miVentana.document.write("<h1>Mi Ventana</h1>");
+        }
+        //Cerrar Ventana
+
+        function cerrarVentana() {
+            miVentana.close();
+        }
+
+        //Redimensionar Ventana
+
+        function Redimensionar() {
+           miVentana.resizeBy(60,60);
+        }
+
+        //Mover Ventana
+
+        function MoverVentana(){
+            miVentana.moveBy(100,100);
+        }
+
+        //Enfocar Ventana
+
+        function enfocar(){
+            miVentana.focus();
+        }
+
+        //Imprimir Ventana
+
+        function imprimirVentana(){
+            miVentana.print();
+        }
+
+    </script>
+    <button onclick="crearVentana()">Crear Ventana</button>
+    <button onclick="cerrarVentana()">Cerrar Ventana</button>
+    <button onclick="Redimensionar()">Redimensionar Ventana</button>
+    <button onclick="MoverVentana()">Mover Ventana</button>
+    <button onclick="enfocar()">Enfocar Ventana</button>
+    <button onclick="imprimirVentana()">Imprimir Ventana</button>
+
+
+</body>
+
+</html>

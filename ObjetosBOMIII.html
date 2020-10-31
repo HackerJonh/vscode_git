@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CUADRO DE DIALOGO</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <script>
+      //Alert: muestra un mensaje al usuario y no devuelve ningun valor
+      alert("Hola,Caracola");
+
+      //promt: Muestra un mensaje al usuario y un campo puede tener o no texto por defecto
+      var respuesta = prompt("Cual es tu Nombre?", "Introduce un nombre");
+      alert("Hola, "+respuesta);
+
+      //confirm:muestra un mensaje al usuario y dos botones. Si el usuario pulsa Aceptar devulve true si pulsa Cancelar cierra la ventana
+      var confirmacion = confirm("¿Te gusta JavaScript");
+      if (confirmacion == true) {
+        alert("Me alegro");
+      } else {
+        alert("Es una pena");
+      }
+    </script>
+  </body>
+</html>
