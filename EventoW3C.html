@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Registro de eventos Avanzados del W3C</title>
+  </head>
+
+  <body>
+    <h1>Modelo de Registro de eventos Avanzados del W3C</h1>
+
+    <h3 id="w3c">Modelo del W3C</h3>
+    <h3 id="w3canonimas">Modelo W3C Anonima</h3>
+
+    <script type="text/javascript">
+      document.getElementById("w3c").addEventListener("click", Saludar, true);
+      document
+        .getElementById("w3c")
+        .addEventListener("click", colorearse, false);
+      document
+        .getElementById("w3c")
+        .addEventListener("mouseover", fondo, false);
+      document.getElementById("w3c").addEventListener("mouseout", out, false);
+
+      //FUNCIONES:
+      function Saludar() {
+        alert("Hola Pendejo");
+        //Eliminar un Evento
+        document.getElementById("w3c").removeEventListener("click", Saludar);
+      }
+
+      function colorearse() {
+        document.getElementById("w3c").style.color = "red";
+      }
+
+      function fondo() {
+        document.getElementById("w3c").style.background = "gray";
+      }
+
+      function out() {
+        document.getElementById("w3c").style.background = "white";
+      }
+
+      //FUNCIONES ANONIMAS
+      document
+        .getElementById("w3canonimas")
+        .addEventListener("click", function () {
+          this.style.background = "gray";
+        });
+    </script>
+  </body>
+</html>

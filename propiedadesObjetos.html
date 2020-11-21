@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Propiedades</title>
+</head>
+
+<body>
+    <script>
+        //Sintaxis de Acceso a las propiedades de un objeto
+
+        var persona1 = {
+            Nombre: "Juan Manuel",
+            Apellido: "Silva Garcia",
+            Año: "1988"
+        };
+
+        //1- Objeto.Propiedad:
+        alert(persona1.Nombre);
+
+        //2- Objeto ["Propiedad"]
+        alert(persona1["Apellido"]);
+
+        //3- Objeto[Expresion]
+        var expresion = "Año";
+        alert(persona1[expresion]);
+
+        //Recorrer las Propiedades de un Objeto
+        for(x in persona1){
+            alert(persona1[x]);
+
+        }
+
+        //Crear una Nueva Propiedad
+        persona1.nacionalidad="Canadience";
+        alert(persona1.nacionalidad);
+    </script>
+
+</body>
+
+</html>

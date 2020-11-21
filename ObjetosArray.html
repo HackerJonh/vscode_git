@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos. Array</title>
+</head>
+
+<body>
+    <script>
+        //Operaciones Basicas con Arrays
+
+        // 1- Creacion de un array
+        var Animales = ["Perro", "Gato", "Raton", "Pajaro"];
+
+        //2- Acceder a los elementos de un Array
+        alert(Animales[2]);
+
+        //PROPIEDADES:
+        //length: Devuelve la longitud del array
+        document.write("<br/><br/>La longitud del Array es:" + Animales.length);
+
+        //Mostrar los elementos del array uno a uno
+        document.write("<br/>Todos los elementos:");
+        for (var i = 0; i < Animales.length; i++) {
+            document.write("<br/>" + Animales[i]);
+        }
+
+        //METODOS DE UN ARRAY:
+
+        //isArray: Devuelve True si el objeto es de Tipo Array
+        document.write("<br/>¿Es un Array: " + Array.isArray(Animales));
+
+        //instanceOf: Devuelve True si es un array
+        document.write(
+            "<br/>¿Seguro que es un Array: " + (Animales instanceof Array)
+        );
+
+        //METODO PARA MOSTRAR UN ARRAY EN FORMA DE CADENA
+        document.write(
+            "<br/>El array en forma de string es:" + Animales.toString()
+        );
+
+        //join:Convierte el array a cadena separado por un separador indicado por parametro
+        document.write("<br/>El Array con Join es: " + Animales.join("-"));
+
+        //METODOS PARA AÑADIR EXTRAER O BORRAR ELEMENTOS
+
+        //pop():Extrae el ultimo elemento del array
+        //shift(): Extrae el primer elemento del array
+
+        var ultimo = Animales.pop();
+        document.write(
+            "<br/>Despues de sacar: " + ultimo + " Quedan :" + Animales.toString()
+        );
+
+        //delete nombreArray[indice]: Elimina el elemento y lo transforma en undefine
+
+        //push(elemento) y unshift(): Añaden un elemento al final y al principio del array
+        Animales.push("Cocodrilo");
+        document.write(
+            "<br/>Despues de meter Cocodrilo quedan: " + Animales.toString()
+        );
+
+        //splice: Inserta elementos separados por coma y elimina uno segun la posicion
+        Animales.splice(2, 1, "Vaca", "Toro");
+        document.write(
+            "<br/>Despues de meter 2 y borrar uno quedan: " + Animales.toString()
+        );
+
+        //concat:Permite concatenar arrays. Une el primer array con el segundo array
+        var MasAnimales = ["Burro", "Mula", "Caballo"];
+        Animales.concat(MasAnimales);
+        document.write("<br/>El array Completo es:" + Animales.toString());
+
+        //copyWithing():Copia elemento de un array y lo sustituye por otro
+
+        //fill: sustituye todos los eelementos del array por el indicado
+
+        //METODOS PARA BUSCAR:
+
+        //indexOf y LastIndexOf: Son similares y devuelven la ultima o la primera posicion de un elemento
+        document.write("<br/>La primera posicion de Mula es: " +Animales.indexOf("Perro"));
+
+        //METODOS PARA INVERTIR Y ORDENAR EL ORDEN DEL ARRAY:
+
+        //reveverse: Invierte el orden del array
+        Animales.reverse();
+        document.write("<br/>El array despues de invertir es: "+Animales.toString());
+
+        //sort: ordena el array
+        Animales.sort();
+        document.write("<br/>El array ordenado es: "+Animales.toString());
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Objetos del Navegador. HISTORY</title>
+</head>
+
+<body>
+  <script>
+    //Propiedad:
+
+    //length: Devuelve el numero de URL en el historial de la pagina
+    alert("Las URL del Navegador son" + history.length);
+
+    //METODOS:
+
+    //back: Carga la URL anterior en el historial
+    function atras() {
+      history.back();
+    }
+    //forward: cargar la url siguiente
+    function adelante() {
+      history.forward();
+    }
+
+    //go(<numero|url>): va a una pagina concreta del historial. Si indicamos un numero positivo va hacia adelante y si es negativo va hacia atras. Si le indicamos una url o parte de ella va hacia la url en concreto
+
+    function ir() {
+      var numero = prompt("Indica un numero para moverte el el Historial");
+      history.go(numero);
+    }
+  </script>
+  <button onclick="atras()">Atras</button>
+  <button onclick="adelante()">Adelante</button>
+  <button onclick="ir()">Ir</button>
+</body>
+
+</html>

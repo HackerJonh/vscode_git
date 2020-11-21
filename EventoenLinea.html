@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modelo de Evento en Linea</title>
+</head>
+
+<body>
+  <h1>Modelo de Registro en Linea</h1>
+  <!--Cada elemento XHTML tiene sus posibles eventos como propiedades: Puede tener un evento de cada tipo-->
+  <h3 id="cab1" onclick="this.innerHTML='Java Script en HTML'" onmouseover="this.style.background='red'"
+    onmouseout="this.style.background='White'">
+    Pulsame
+  </h3>
+
+  <!--Manejadores como funciones externas-->
+  <h3 onclick="cambiar(this)">Pulsa Aqui para ver que se ejecuta</h3>
+
+  <script>
+    function cambiar(elem) {
+      elem.innerHTML = "Javascript en XHTML y Funcion Externa";
+    }
+  </script>
+  <br />
+  <!--Hay acciones que desencadenan varios eventos Ejemplo  submit desencadena  onmousedown, onclick, onmouseup,onsubmit. Para evitar que el navegador ejecute la accion por defecto necesitamos añadir un return false-->
+  <a href="https://www.google.com" onclick="alertar(); return false;">Pulsa Aqui a ver que se ejecuta</a>
+  <script>
+    function alertar() {
+      alert("Vamos a Google");
+    }
+  </script>
+  <br />
+  <a href="https://www.google.com" onclick="return preguntar();">Pulsa Aqui a ver que se ejecuta</a>
+  <script>
+    function preguntar() {
+      return confirm("Quieres ir a google");
+    }
+  </script>
+
+</body>
+
+</html>

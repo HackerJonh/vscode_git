@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos del Navegador. Location</title>
+  </head>
+  <body>
+      <p id="location"></p>
+    <script>
+      /*Caracateristicas:
+        -Guarda informacion de la URL Actual
+        -No hay un estandar publico pero la mayoria de los navegadores soportan este objeto*/
+
+        //PROPIEDADES DEL OBJETO LOCATION
+
+        var texto="";
+
+        //href: rEGRESA LA url de la pagina en la que nos encontramos
+        texto+="<br/> href:"+ location.href;
+        
+        //hostname: nombre del host de la pagina
+        texto+="<br/>Hostname:" +location.hostname;
+
+        //pathname: Regresa el pathname de la pagina
+        texto+="<br/> PathName:" +location.pathname;
+
+        //Protocol: Regresa el protocolo de la pagina
+        texto+="<br/> Protocolo:" +location.protocol;
+
+        //hash: Hash o ancla de la pagina
+        texto+="<br/> Hash: location.hash";
+
+        //Host regresa el nombre del host y el puerto
+        texto+="<br/> host:" +location.host;
+
+        //origin: Regresa el nombre del protocolo, hostname y el puerto
+        texto+="<br/> origin:"+ location.origin;
+
+        //search: Regresa la querystring de la pagina
+        texto+="<br/> search:"+ location.search;
+
+        document.getElementById("location").innerHTML=texto;
+
+
+        //METODOS DEL OBJETO LOCATION
+
+        //assign(url):asigna un nuevo documento a la pagina
+
+        function nuevoDocumento(){
+            location.assign("http://www.google.com");
+        }
+
+        //reload(): recarga la pagina
+
+        function recargar(){
+            location.reload();
+        }
+
+        //repalece(url): sustituye la pagina por otra . Desaparece su Historial
+
+        function sustituye(){
+            location.replace("http://www.youtube.com");
+        }
+
+    </script>
+    <button onclick="nuevoDocumento">Carga un documento</button>
+    <button onclick="recargar">Recarga la pagina</button>
+    <button onclick="sustituye">Sustituye la pagina</button>
+  </body>
+</html>

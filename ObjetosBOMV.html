@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Objetos del Navegador. Navigator</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <p id="navegador"></p>
-        <p id="navegador2"></p>
-        <p id="navegador3"></p>
-        <p id="navegador4"></p>
-        <p id="navegador5"></p>
-        <script>
-            /*Caracteristicas:
-            -Guarda Informacion de el navegador.
-            -No hay un estandar publico pero la mayoria de los navegadores soportan este objeto*/
+  <head>
+    <title>Objetos del Navegador. Navigator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-            //PROPIEDADES DEL OBJETO NAVIGATOR
-            
-            //appCodeName: Codename del navegador
-            var text="";
-            text +="<br/>CodeName: "+navigator.appCodeName;
-            document.getElementById("navegador").innerHTML=text;
+  <body>
+    <p id="navegador"></p>
+    <p id="navegador2"></p>
+    <p id="navegador3"></p>
+    <p id="navegador4"></p>
+    <p id="navegador5"></p>
+    <p id="navegador6"></p>
+    <p id="navegador7"></p>
+    <script>
+      /*Caracteristicas:
+              -Guarda Informacion de el navegador.
+              -No hay un estandar publico pero la mayoria de los navegadores soportan este objeto*/
 
-            //appName: AppName del navegador
+      //PROPIEDADES DEL OBJETO NAVIGATOR
 
-            var text2="";
-            text2+="<br/>AppName: "+navigator.appName;
-            document.getElementById("navegador2").innerHTML=text2;
+      //appCodeName: Codename del navegador
+      var text = "";
+      text += "<br/>CodeName: " + navigator.appCodeName;
+      document.getElementById("navegador").innerHTML = text;
 
-            //appVersion: Muestra la version del navegador
-            var text3="";
-            text3+="<br/>AppVersion: "+navigator.appVersion;
-            document.getElementById("navegador3").innerHTML=text3;
+      //appName: AppName del navegador
 
-            //product: Muestra el motor del navegador:
-            var text4="";
-            text4+="<br/>Product: "+navigator.product;
-            document.getElementById("navegador4").innerHTML=text4;
+      var text2 = "";
+      text2 += "<br/>AppName: " + navigator.appName;
+      document.getElementById("navegador2").innerHTML = text2;
 
-            //Online: Muestra si el navegador esta online u offline
-            var text5="";
-            text5+="<br/>Online: "+navigator.onLine;
-            document.getElementById("navegador5").innerHTML=text5;
+      //appVersion: Muestra la version del navegador
+      var text3 = "";
+      text3 += "<br/>AppVersion: " + navigator.appVersion;
+      document.getElementById("navegador3").innerHTML = text3;
 
-            
+      //product: Muestra el motor del navegador:
+      var text4 = "";
+      text4 += "<br/>Product: " + navigator.product;
+      document.getElementById("navegador4").innerHTML = text4;
 
+      //Online: Muestra si el navegador esta online u offline
+      var text5 = "";
+      text5 += "<br/>Online: " + navigator.onLine;
+      document.getElementById("navegador5").innerHTML = text5;
 
-        </script>
-    
-    </body>
+      //Language: Muestra el lenguaje del navegador
+      var text6 = "";
+      text6 += "<br/>Lenguaje: " + navigator.language;
+      document.getElementById("navegador5").innerHTML = text6;
+
+      //geolocation: Devuelve un objeto geolocoation que puede servir para localizar la posicion del usuario
+
+      var text7 = "";
+      text7 += "<br/>Geolocation: " + navigator.geolocation;
+      document.getElementById("navegador7").innerHTML = text7;
+    </script>
+  </body>
 </html>

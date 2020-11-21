@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos. Modelo de registro avanzado Microsoft</title>
+</head>
+<body>
+    <h1>Modelo de Registro avanzado de Microsoft</h1>
+    <h3 id="mcs">Modelo de Microsoft</h3>
+    <h3 id="mcsanonima">Modelo de Microsoft Anonima</h3>
+    <script type="text/javascript">
+        document.getElementById("mcs").attachEvent("onclick",saludar);
+        
+
+        function saludar(){
+            alert("Hola Wey");
+        }
+
+        //FUNCIONES ANONIMAS:
+        document.getElementById("mcsanonima").attachEvent("onclick",function(){
+            this.style.backgroundColor="red";
+           
+
+        });
+    </script>
+
+</body>
+</html>

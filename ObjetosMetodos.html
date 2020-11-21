@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos. Metodos</title>
+</head>
+
+<body>
+    <script>
+        //SINTAXIS DE CREACION DE METODO DE UN OBJETO
+
+        var persona1 = {
+            Nombre: "Juan",
+            Profesion: "Hacker",
+            Alias: "JohnHack",
+            Quiensoy:function(){
+                return this.Nombre+" "+this.Alias;
+
+            }
+        };
+        alert(persona1.Quiensoy());
+    </script>
+
+</body>
+
+</html>

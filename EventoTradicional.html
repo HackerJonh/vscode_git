@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos. Modelo de Registro de Eventos Tradicional</title>
+  </head>
+
+  <body>
+    <h1>Modelo de Registro de Eventos Tradicional</h1>
+
+    <h3 id="tradicional">Pulsa Aqui para ver</h3>
+    <script>
+      document.getElementById("tradicional").onclick = cambiar; //Sin parentesis
+
+      function cambiar() {
+        alert("Entramos en Cambiar");
+        document.getElementById("tradicional").innerHTML =
+          "Modelo de registro de Eventos Tradicional";
+        document.getElementById("tradicional").onclick = null;
+
+        //INCONVENIENTE: La pagina debe estar totalmente cargada para que se utilicen las funciones DOM que asignan manejadores a los elementos HTML
+      }
+    </script>
+    <h3 id="tradicional2">Pulsa Aqui para ver</h3>
+    <Script>
+        window.onload=function(){
+            alert("Cargado Correctamente");
+            document.getElementById("tradicional2").onclick=miMensaje;
+        }
+        function miMensaje(){
+            document.getElementById("tradicional2").innerHTML="Modelo de evento Tradicional";
+        }
+    </Script>
+  </body>
+</html>

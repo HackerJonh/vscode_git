@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Prototipos</title>
+</head>
+<body>
+    <script>
+        //Sintaxis de Creacion de un Objeto Usando la funcion constructor:*/
+        function Persona(nom,ape,añ){
+            this.Nombre=nom;
+            this.Apellido=ape;
+            this.Año=añ;
+            this.NombreCompleto=function(){
+                return this.Nombre+" "+this.Apellido;
+            }
+        }
+        var Persona1=new Persona("Juan Manuel","Silva Garcia","1988");
+        var Persona2=new Persona("Nathalie Mayra","Heidecke Cabrera","1954");
+
+        //Añadir una Propiedad a un Objeto
+        Persona1.Nacionalidad="Venezuela"; //Solo se añade a Persona1
+
+        //Añadir un Metodo a un Objeto
+        Persona2.Nacimiento=function(){
+            return "Nacimiento en el Año"+" "+this.Año; //Solo se añade a Persona2
+        }
+        alert(Persona2.Nacimiento());
+
+        //Añadir una propiedad a un prototipo
+        Persona.prototype.Estatus="Casado";
+
+        //Añadir un metodo a un prototipo
+        Persona.prototype.Status=function(){
+            return "Estado Civil " + this.Estatus;
+        }
+        var Persona3=new Persona("Ross","Heidecke","2017");
+        alert(Persona3.NombreCompleto());
+        alert(Persona3.Status());
+
+    </script>
+    
+</body>
+</html>
