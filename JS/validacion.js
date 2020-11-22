@@ -50,9 +50,9 @@ function validaTelefono() {
 function validaFecha() {
     var dia = document.getElementById("dia").value;
     var mes = document.getElementById("mes").value;
-    var año = document.getElementById("año").value;
+    var ano = document.getElementById("ano").value;
 
-    var fecha = new Date(año, mes, dia);
+    var fecha = new Date(ano, mes, dia);
     if (isNaN(fecha)) {
         alert("Los Campos de fecha son incorrectos");
         return false;
@@ -75,7 +75,7 @@ function validaCheck() {
 
 function validar(e) {
     if (validaNombre() && validaTelefono() && validaFecha() && validaCheck() && confirm("Pulsa Aceptar si deseas enviar el formulario")) {
-        return true
+        return true;
     } else {
         e.preventDefault();
         return false;
