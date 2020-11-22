@@ -33,7 +33,7 @@ function validaNombre() {
     var elemento = document.getElementById("nombre");
     if (elemento.value == "") {
         alert("El campo nombre no puede estar Vacio");
-        error(elemento);
+        Error(elemento);
         return false;
     }
     return true;
