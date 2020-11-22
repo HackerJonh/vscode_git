@@ -33,6 +33,7 @@ function validaNombre() {
     var elemento = document.getElementById("nombre");
     if (elemento.value == "") {
         alert("El campo nombre no puede estar Vacio");
+        error(elemento);
         return false;
     }
     return true;
@@ -80,4 +81,14 @@ function validar(e) {
         e.preventDefault();
         return false;
     }
+}
+
+function Error(elemento) {
+    elemento.className = "error";
+    elemento.focus();
+    
+}
+
+function limpiarError() {
+    elemento.className = "";
 }
