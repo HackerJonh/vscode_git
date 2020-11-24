@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="JS/validacionAvanzada.js"></script>
+    <style>
+        .error{
+            border: solid 2px red;
+        }
+    </style>
   </head>
   <body>
     <h1>Formulario</h1>
@@ -44,6 +50,7 @@
           </td>
         </tr>
       </table>
+      <p id="mensajeError"></p>
       <p>
         <input type="submit" value="Enviar" id="enviar" />
         <input type="reset" value="Borrar" id="Borrar" />

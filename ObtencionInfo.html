@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eventos.Obtener Informacion de un Evento</title>
-  </head>
 
-  <body>
-    <h1 id="eventos">Optener Informacion de EVENTO</h1>
-    <h2 id="parrafo1">parrafo 1</h2>
-    <h2 id="parrafo2">parrafo 2</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos.Obtener Informacion de un Evento</title>
+</head>
 
-    <script type="application/javascript">
-      document
-        .getElementById("eventos")
-        .addEventListener("mouseover", manejador);
-      document
-        .getElementById("eventos")
-        .addEventListener("mouseout", manejador);
-      document.getElementById("parrafo1").addEventListener("click", saludo);
-      document.getElementById("parrafo2").addEventListener("click", saludo);
+<body>
+  <h1 id="eventos">Optener Informacion de EVENTO</h1>
+  <h2 id="parrafo1">parrafo 1</h2>
+  <h2 id="parrafo2">parrafo 2</h2>
 
-      function manejador(e) {
-        //Valoramos la posiblidad de que se use un Navegador de Microsoft
-        if (!e) e = window.event;
+  <script type="application/javascript">
+    document.getElementById("eventos").addEventListener("mouseover", manejador);
+    document.getElementById("eventos").addEventListener("mouseout", manejador);
+    document.getElementById("parrafo1").addEventListener("click", saludo);
+    document.getElementById("parrafo2").addEventListener("click", saludo);
 
-        switch (e.type) {
-          case "mouseover":
-            this.style.color = "purple";
-            break;
+    function manejador(e) {
+      //Valoramos la posiblidad de que se use un Navegador de Microsoft
+      if (!e) e = window.event;
 
-          case "mouseout":
-            this.style.color = "gray";
-            break;
-        }
+      switch (e.type) {
+        case "mouseover":
+          this.style.color = "purple";
+          break;
+
+        case "mouseout":
+          this.style.color = "gray";
+          break;
       }
-      function saludo(e) {
-        if (!e) e = window.event;
+    }
+    function saludo(e) {
+      if (!e) e = window.event;
 
-        if (e.target.id == "parrafo1") {
-          alert("Has presionado el parrafo 1");
-
-        } else if (e.target.id == "parrafo2") {
-          
-          alert("Has pulsado el parrafo 2");
-        }
+      if (e.target.id == "parrafo1") {
+        alert("Has presionado el parrafo 1");
+      } else if (e.target.id == "parrafo2") {
+        alert("Has pulsado el parrafo 2");
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>
