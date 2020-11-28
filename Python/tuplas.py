@@ -18,3 +18,8 @@ print("La lista Convertida en tupla",miLista)
 
 #Consultar si hay un elemento en la tupla
 print("¿Juan esta en mi tupla?:", "Juan"in miLista) #milista es una tupla por la conversion de arriba
+
+#Desempaquetando tuplas
+nombre1,nombre2,nombre3,nombre4=miTupla
+print("El primer nombre es: ",nombre1)
+print("El segundo nombre es: ",nombre2)
