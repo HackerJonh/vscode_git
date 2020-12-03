@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluador de salario</title>
+</head>
+<body>
+    <h1>Evaluacion de Salarios</h1>
+    <br/>
+
+    <script>
+        var  salarioPresidente=parseInt(prompt("Introduce el salario del Presidente: "));
+        document.write("<br/>Salario del presidente: "+salarioPresidente)
+
+
+        var salarioDirector=parseInt(prompt("Introduce el salario del Director: "));
+        document.write("<br/>Salario del Director: "+salarioDirector);
+
+        var salarioJefeArea=parseInt(prompt("Introduce el salario del Jefe Area: "));
+        document.write("<br/> Salario del Jefe Area: "+salarioJefeArea);
+
+        var salarioAdmin=parseInt(prompt("Introduce el salario del Administrativo: "));
+        document.write("<br/> Salario del Administrativo: "+salarioAdmin);
+
+        function evaluador(){
+            if(salarioAdmin<salarioJefeArea && salarioDirector<salarioPresidente){
+                alert("Aqui todo va bien");
+                document.write("<br/>Sueldo balanceado:");
+            }else{
+                alert("Algo no esta bien");
+                document.write("<br/>Sueldos incorrectos:");
+            }
+        }
+        evaluador();
+
+
+       
+
+       
+       
+       
+    </script>
+    
+</body>
+</html>
