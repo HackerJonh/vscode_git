@@ -1,5 +1,6 @@
 import math
 
+
 #Sintaxis del Bucle while
 i=1
 
