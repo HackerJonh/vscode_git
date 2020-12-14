@@ -12,3 +12,7 @@ duvuelvepares=generador(20)
 
 for i in duvuelvepares:
     print(i)
+    
+    #Si lo que queremos es que nos imprima uno a uno la lista usamos la sintaxist sig:
+    
+    #print(next(devuelvepares))
