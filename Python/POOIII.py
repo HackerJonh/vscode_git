@@ -1,4 +1,8 @@
+import sys
+from termcolor import colored,cprint
 #Encapsulacion de metodos
+
+
 
 class Coche():
    
@@ -22,7 +26,7 @@ class Coche():
             return "El coche esta en marcha"
 
         elif(self.__enmarcha and chequeo==False):
-            return "Algo anda mal en el chequeo"
+            cprint ("Algo anda mal en el chequeo","white","on_red")
 
         else:
             return "El coche esta parado"
@@ -33,9 +37,9 @@ class Coche():
               self.__anchoChasis, " y un largo de: ", self.__largoChasis)
     
     def chequeo_Interno(self):
-        print("Realizando Chequeo interno")
+        cprint("Realizando Chequeo interno","red","on_green")
         self.gasolina="ok"
-        self.aceite="ok"
+        self.aceite="no"
         self.puertas="cerradas"
 
         if(self.gasolina=="ok"and self.aceite=="ok"and self.puertas=="cerradas"):
