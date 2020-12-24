@@ -11,7 +11,7 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "python":"C:\\Users\\Nathalie\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+            "python":"C:\\Python3.9.1\\python.exe"
             
         }
     ]

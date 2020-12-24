@@ -6,7 +6,7 @@
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": false,
     "files.autoSave": "afterDelay",
-    "python.pythonPath": "C:\\Users\\Nathalie\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "python.pythonPath": "C:\\Python3.9.1\\python.exe",
     "python.linting.mypyEnabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
