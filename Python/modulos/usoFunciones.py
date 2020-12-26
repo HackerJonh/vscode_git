@@ -1,3 +1,8 @@
-import Modulos
+#import Modulos
+from Modulos import *
 
-Modulos.sumar(12,23)
+sumar(7,5)
+
+resta(9,5)
+
+multiplica(2,4)
