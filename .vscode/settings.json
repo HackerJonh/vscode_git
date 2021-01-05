@@ -10,5 +10,7 @@
     "python.linting.mypyEnabled": false,
     "python.linting.pylintEnabled": true,
     "python.linting.enabled": true,
-    "python.testing.promptToConfigure": false
+    "python.testing.promptToConfigure": false,
+    "python.linting.banditEnabled": false,
+    "python.linting.flake8Enabled": false
 }
