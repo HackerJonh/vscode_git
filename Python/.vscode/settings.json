@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "C:\\Users\\Nathalie\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "python.pythonPath": "C:\\Python3.9.1\\python.exe",
     "gitlens.advanced.blame.customArguments": [],
     "python.linting.mypyEnabled": false,
     "python.linting.pylintEnabled": true,

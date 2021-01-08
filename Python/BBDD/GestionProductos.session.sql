@@ -1,0 +1,1 @@
+INSERT INTO PRODUCTOS VALUES('AR05','Tren',15,'Jugueteria')
