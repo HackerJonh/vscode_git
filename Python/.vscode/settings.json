@@ -1,7 +1,9 @@
 {
-    "python.pythonPath": "C:\\Python3.9.1\\python.exe",
+    "python.pythonPath": "c:\\Python3.9.1\\python.exe",
     "gitlens.advanced.blame.customArguments": [],
     "python.linting.mypyEnabled": false,
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "sqltools.connections": [],
+    "sqltools.useNodeRuntime": true
 }

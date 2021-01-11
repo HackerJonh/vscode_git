@@ -3,15 +3,13 @@
         {
             "previewLimit": 50,
             "driver": "SQLite",
-            "name": "GestionProductos",
-            "database": "GestionProductos.db"
-        },
-        {
-            "previewLimit": 50,
-            "driver": "SQLite",
-            "name": "GestionProductos2",
-            "database": "GestionProductos2.db"
+            "name": "GestionProducto2",
+            "database": "GestionProducto2.db"
         }
     ],
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "python.pythonPath": "C:\\Python3.9.1\\python.exe",
+    "python.linting.mypyEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
